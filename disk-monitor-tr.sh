@@ -285,9 +285,11 @@ setup_wizard() {
         "Kontrol sıklığı (1-60 dakika) [varsayılan $DEFAULT_CRON_INTERVAL]: " \
         $DEFAULT_CRON_INTERVAL 1 60)
 
+    script_path=$(realpath "$0") 
+
     (
         crontab -l 2>/dev/null | grep -v "disk-monitor.sh"
-        echo "*/$cron_interval * * * * $(pwd)/disk-monitor.sh"
+        echo "*/$cron_interval * * * * $script_path"
     ) | crontab -
 
     crontab -l
