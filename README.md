@@ -9,7 +9,7 @@ This script is designed to monitor disk and RAM usage on Debian-based servers an
 Run the following command to download and start the installation:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/KaraKunT/Tools/DiskMonitor/disk-monitor.sh -o /usr/local/bin/disk-monitor.sh && chmod +x /usr/local/bin/disk-monitor.sh && /usr/local/bin/disk-monitor.sh --init
+curl -fsSL https://raw.githubusercontent.com/KaraKunT/DiskMonitor/disk-monitor.sh -o /usr/local/bin/disk-monitor.sh && chmod +x /usr/local/bin/disk-monitor.sh && /usr/local/bin/disk-monitor.sh --init
 ```
 
 or
